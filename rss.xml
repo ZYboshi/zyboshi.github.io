@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>ZybLove 的个人博客</title>
+    <title>&lt;有心论&gt;</title>
     <link>https://zyboshi.github.io</link>
     <atom:link href="https://zyboshi.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>&lt;有心论&gt;</description>
+    <description>ZybLove 的个人博客</description>
     <generator>Solo, v4.4.0, https://b3log.org/solo</generator>
-    <lastBuildDate>Tue, 26 Aug 2025 16:02:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 21:53:58 +0800</lastBuildDate>
     <language>zh-cn</language>
+    <item>
+      <title>从零搭建个人博客指南:Solo + GitHub Pages</title>
+      <link>https://zyboshi.github.io/articles/2025/08/26/1756216361270.html</link>
+      <description>
+        <![CDATA[<p>本篇指南将会用最易懂的方式，带着你一步步构建个人博客</p>]]>
+      </description>
+      <author>ZybLove</author>
+      <guid>https://zyboshi.github.io/articles/2025/08/26/1756216361270.html</guid>
+      <category>基础技能</category>
+      <pubDate>Tue, 26 Aug 2025 21:53:11 +0800</pubDate>
+    </item>
     <item>
       <title>测试</title>
       <link>https://zyboshi.github.io/test-first-one</link>

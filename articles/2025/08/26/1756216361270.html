@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><meta name="theme-color" content="#3b3e43"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no"/><title>从零搭建个人博客指南:Solo + GitHub Pages - <有心论></title><meta name="description" content="本篇指南将会用最易懂的方式，带着你一步步构建个人博客"/><meta property="og:description" content="本篇指南将会用最易懂的方式，带着你一步步构建个人博客"/>    <meta name="keywords" content="Life,Learning,Daily,Solo,Java,博客,开源"/><link rel="dns-prefetch" href="https://zyboshi.github.io"/><link rel="dns-prefetch" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://zyboshi.github.io"><link rel="icon" type="image/png" href="https://b3log.org/images/brand/solo-128.png"/><link rel="apple-touch-icon" href="https://b3log.org/images/brand/solo-128.png"><link rel="shortcut icon" type="image/x-icon" href="https://b3log.org/images/brand/solo-128.png"><meta name="copyright" content="B3log"/><meta http-equiv="Window-target" content="_top"/><meta property="og:locale" content="zh_CN"/><meta property="og:title" content="从零搭建个人博客指南:Solo + GitHub Pages - <有心论>"/><meta property="og:site_name" content="&lt;有心论&gt;"/><meta property="og:url"      content="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html?"/><meta property="og:image" content="https://b3log.org/images/brand/solo-128.png"/><link rel="search" type="application/opensearchdescription+xml" title="从零搭建个人博客指南:Solo + GitHub Pages - <有心论>" href="/opensearch.xml"><link href="https://zyboshi.github.io/rss.xml" title="RSS" type="application/rss+xml" rel="alternate"/><link rel="manifest" href="https://zyboshi.github.io/manifest.json">        <link rel="canonical" href="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html">        <link rel="stylesheet"
+              href="https://zyboshi.github.io/skins/yilia/css/base.css?1756212806233"/>
+            <link rel="prev" title="测试" href="https://zyboshi.github.io/test-first-one">
+    <script src="https://cdn.jsdelivr.net/npm/vditor@3.8.4/dist/js/icons/ant.js" async="" id="vditorIconScript"></script></head>
+<body>
+<div class="side fn__flex-column">
+    <div class="overlay">
+        <a onclick="$('.side .toc').show()" href="javascript:void(0)" class="toc-btn">目录</a>
+    </div>
+    <div class="user__sites">
+    <a href="https://ld246.com/member/ZybLove"
+       title="https://ld246.com/member/ZybLove"
+       class="user__site"
+       target="_blank" rel="noopener nofollow">
+        <svg viewBox="0 0 32 32" width="100%" height="100%">
+            <path fill="#d23f31" style="fill: var(--color1, #d23f31)" d="M5.787 17.226h17.033l5.954 9.528c0.47 0.752 0.003 1.361-1.042 1.361h-15.141z"></path>
+            <path d="M10.74 3.927h17.033c1.045 0 1.512 0.609 1.042 1.361l-5.954 9.528h-19.872l6.379-10.209c0.235-0.376 0.849-0.681 1.372-0.681z"></path>
+            <path d="M2.953 17.226h2.839l6.804 10.889h-1.892c-0.523 0-1.137-0.305-1.372-0.681z"></path>
+        </svg>
+    </a>
+
+        <a href="https://github.com/ZYboshi"
+           title="https://github.com/ZYboshi"
+           class="user__site"
+           target="_blank" rel="noopener nofollow">
+            <svg viewBox="0 0 32 32" width="100%" height="100%">
+                <path d="M16 0.331c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+            </svg>
+        </a>
+
+        <a href="https://www.zhihu.com/people/my-word-is-good"
+           title="https://www.zhihu.com/people/my-word-is-good"
+           target="_blank"
+           class="user__site" rel="noopener nofollow">
+            <svg viewBox="0 0 32 32" width="100%" height="100%">
+                <path d="M32 26.67c0 2.931-2.382 5.33-5.33 5.33h-21.339c-2.948 0-5.33-2.382-5.33-5.33v-21.339c0-2.948 2.382-5.33 5.33-5.33h21.339c2.948 0 5.33 2.382 5.33 5.33v21.339zM12.358 17.191h4.713c0-1.114-0.531-1.748-0.531-1.748h-4.079c0.103-2.005 0.189-4.576 0.223-5.536h3.874s-0.017-1.645-0.463-1.645h-6.822s0.411-2.142 0.96-3.085c0 0-2.040-0.12-2.742 2.605-0.686 2.725-1.731 4.354-1.851 4.662s0.6 0.137 0.891 0c0.309-0.137 1.663-0.617 2.057-2.537h2.108c0.034 1.2 0.12 4.885 0.086 5.536h-4.336c-0.6 0.446-0.823 1.748-0.823 1.748h4.971c-0.206 1.371-0.566 3.137-1.080 4.062-0.806 1.491-1.234 2.828-4.131 5.176 0 0-0.48 0.36 0.994 0.223 1.474-0.12 2.845-0.514 3.839-2.434 0.514-0.994 1.011-2.28 1.423-3.565l4.079 4.713s0.548-1.268 0.137-2.657l-3.034-3.394-1.028 0.754c0.291-0.994 0.497-1.988 0.548-2.845 0.017 0.017 0.017 0 0.017-0.034zM18.048 7.936v16.3h1.714l0.703 1.954 2.965-1.954h3.754v-16.3h-9.136zM25.401 22.487h-1.937l-2.434 1.611-0.566-1.611h-0.6v-12.735h5.553v12.735h-0.017z"></path>
+            </svg>
+        </a>
+        <a href="javascript:void(0)"
+           class="user__site" title="15068843208">
+            <svg viewBox="0 0 32 32" width="100%" height="100%">
+                <path d="M9.062 9.203c0-0.859-0.562-1.422-1.422-1.422-0.844 0-1.703 0.562-1.703 1.422 0 0.844 0.859 1.406 1.703 1.406 0.859 0 1.422-0.562 1.422-1.406zM20.672 17.125c0-0.562-0.562-1.125-1.422-1.125-0.562 0-1.125 0.562-1.125 1.125 0 0.578 0.562 1.141 1.125 1.141 0.859 0 1.422-0.562 1.422-1.141zM16.984 9.203c0-0.859-0.562-1.422-1.406-1.422-0.859 0-1.703 0.562-1.703 1.422 0 0.844 0.844 1.406 1.703 1.406 0.844 0 1.406-0.562 1.406-1.406zM26.906 17.125c0-0.562-0.578-1.125-1.422-1.125-0.562 0-1.125 0.562-1.125 1.125 0 0.578 0.562 1.141 1.125 1.141 0.844 0 1.422-0.562 1.422-1.141zM22.75 10.922c-0.359-0.047-0.719-0.063-1.094-0.063-5.375 0-9.625 4.016-9.625 8.953 0 0.828 0.125 1.625 0.359 2.375-0.359 0.031-0.703 0.047-1.063 0.047-1.422 0-2.547-0.281-3.969-0.562l-3.953 1.984 1.125-3.406c-2.828-1.984-4.531-4.547-4.531-7.656 0-5.391 5.094-9.625 11.328-9.625 5.563 0 10.453 3.391 11.422 7.953zM32 19.687c0 2.547-1.688 4.813-3.969 6.516l0.859 2.828-3.109-1.703c-1.141 0.281-2.281 0.578-3.406 0.578-5.391 0-9.625-3.688-9.625-8.219s4.234-8.219 9.625-8.219c5.094 0 9.625 3.688 9.625 8.219z"></path>
+            </svg>
+        </a>
+    </div>
+    <header class="content fn__flex-1">
+        <a href="https://zyboshi.github.io">
+            <img class="avatar" src="https://b3logfile.com/avatar/1739258071160_1739258341466.png?imageView2/1/w/128/h/128/interlace/0/q/100" title="" alt=""/>
+        </a>
+        <hgroup>
+            <h1>
+                <a href="https://zyboshi.github.io"><有心论></a>
+            </h1>
+        </hgroup>
+        <p class="subtitle">
+            ZybLove 的个人博客
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://zyboshi.github.io/tags.html">标签墙</a>
+                    &nbsp; &nbsp;
+                    <a href="https://zyboshi.github.io/archives.html">存档</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+            <div class="vditor-reset">Open Heart, Open Mind<br/>
+Open Arms, Open Life!
+</div>
+        <a rel="alternate" href="https://zyboshi.github.io/rss.xml" title="订阅" class="icon-rss"></a>
+    </footer>
+        <div class="toc">
+            <a onclick="$('.side .toc').hide();" href="javascript:void(0)" class="close">X</a>
+<ul class="article__toc">
+        <li class="toc__h1">
+            <a href="#toc_h1_0">为什么要搭建个人博客？</a>
+        </li>
+        <li class="toc__h1">
+            <a href="#toc_h1_1">整体方案介绍</a>
+        </li>
+        <li class="toc__h1">
+            <a href="#toc_h1_2">具体方案介绍</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_3">第一部分:准备工作</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_4">第二部分:本地安装和配置Solo</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_5">1. 下载Solo</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_6">2. 配置Solo</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_7">3. Solo后台管理系统配置</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_8">第三部分：配置github pages</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_9">第四部分：一键提交</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_10">自动化脚本组成</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_11">自动化脚本代码:</a>
+        </li>
+        <li class="toc__h1">
+            <a href="#toc_h1_12">Last</a>
+        </li>
+</ul>        </div>
+</div>
+<main>
+    <article class="post">
+        <header class="fn__flex">
+            <h2 class="fn__flex-1">
+                <a rel="bookmark" href="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html">
+                    从零搭建个人博客指南:Solo + GitHub Pages
+                </a>
+            </h2>
+            <time><span class="icon-date"></span> 2025-08-26</time>
+        </header>
+        <div class="article__footer fn__flex">
+            <span class="icon-tag fn__flex-center"></span>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            <div class="tags fn__flex-1 fn__flex-center">
+                    <a class="tag" rel="tag" href="https://zyboshi.github.io/tags/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD">
+                        基础技能</a>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+                <a href="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html#b3logsolocomments"
+                   class="vditor-tooltipped__n vditor-tooltipped link fn__flex-center"
+                   aria-label="评论">
+                    <span data-uvstatcmt="1756216361270">0</span>
+                    <span class="icon-chat"></span>
+                </a>
+            <a class="vditor-tooltipped__n vditor-tooltipped link fn__flex-center"
+               href="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html"
+               aria-label="浏览">
+                <span data-uvstaturl="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html">0</span>
+                <span class="icon-views"></span>
+            </a>
+            <a rel="nofollow" href="https://zyboshi.github.io/authors/1756111777054" class="fn__flex-center">
+                <img class="avatar" title="ZybLove" alt="ZybLove"
+                     src="https://b3logfile.com/avatar/1739258071160_1739258341466.png?imageView2/1/w/128/h/128/interlace/0/q/100"/>
+            </a>
+        </div>
+
+        <section class="abstract vditor-reset">
+            <p>本篇指南是为了刚进入大学或者对计算机了解不多，但想要拥有一个属于自己的技术博客的同志们编写的。本篇指南将会用最易懂的方式，带着你一步步构建个人博客，同时厘清个个工具的具体用途，不需要任何编程基础！</p>
+<h1 id="toc_h1_0">为什么要搭建个人博客？</h1>
+<blockquote>
+<p>搭建博客除了收获自己的博客之外并不能收获其他东西，所以请思考为什么要搭建个人博客</p>
+</blockquote>
+<p>学会新知识却不记录下来，导致很快就忘了；没有正反馈，持续学习能力弱；你是否也有这种经历？</p>
+<p>以下是我搭建个人博客的原因：</p>
+<ul>
+<li>📃将自己学习历程（计算机、文学）以及个人心经记录于网上</li>
+<li>📜提升写作和表达能力</li>
+<li>📄督促自身提升学习技术以及提高项目管理能力</li>
+</ul>
+<p>目标：</p>
+<ul>
+<li>将每个阶段性的成果发布到个人博客上</li>
+</ul>
+<h1 id="toc_h1_1">整体方案介绍</h1>
+<p>我们将使用 Solo博客系统 + GitHub Pages 的方式：</p>
+<ul>
+<li><strong>Solo</strong>：一个简单易用的Java博客系统</li>
+<li><strong>GitHub Pages</strong>：GitHub提供的免费静态网站托管服务</li>
+<li><strong>Git Bash</strong>：用于将博客内容上传到GitHub的工具</li>
+</ul>
+<p><img src="https://b3logfile.com/file/2025/08/image-OWaGahn.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></p>
+<p>不用担心自己不会使用Java或者是不会使用Git，唯一需要搜索资料的部分我会在<a href="siyuan://blocks/20250826195928-hqvpnua" target="_blank">准备工作</a>部分介绍</p>
+<h1 id="toc_h1_2">具体方案介绍</h1>
+<h2 id="toc_h2_3">第一部分:准备工作</h2>
+<blockquote>
+<p>这一部分请大家自己在网上搜索资料并且完成相关工作，菜鸟教程的资料足够大家完成这一部分工作了</p>
+</blockquote>
+<ul>
+<li>注册Github账号  网址:<a href="https://github.com/" target="_blank">GitHub</a>（注意，需要挂代理，如果不知道怎么挂代理可以联系我的vx)</li>
+<li>安装Git:<a href="https://git-scm.com/downloads" target="_blank">Git - Downloads</a>   (这里推荐一个应用：<a href="https://desktop.github.com/download/" target="_blank">Github Desktop</a>  无需任何指令也可实现git的功能,并且初步学习pull 以及 push等操作)</li>
+<li>安装Java环境 :<a href="https://www.oracle.com/cn/java/technologies/javase/jdk11-archive-downloads.html" target="_blank">Java Archive Downloads - Java SE 11 | Oracle 中国</a>  下载java11之后的版本</li>
+<li>下载vscode</li>
+</ul>
+<h2 id="toc_h2_4">第二部分:本地安装和配置Solo</h2>
+<blockquote>
+<p>喝水不忘挖井人，Solo是主要由D和V两位前辈编写的个人博客管理系统，我第一次接触是通过思源笔记（很好用，第一款为之付钱的软件），感谢他们的付出</p>
+<p>D的演示视频: <a href="https://gitee.com/link?target=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2FBV1tK411n7R3" target="_blank">本地 localhost 搭建</a></p>
+<p>Solo仓库:</p>
+<p>Gitee:<a href="https://gitee.com/dl88250/solo" target="_blank">solo: 🎸 B3log 分布式社区的 Java 博客端节点系统，欢迎加入下一代社区网络。B3log distributed community blog-end node system, welcome to join the next generation community network.</a></p>
+<p>Github:<a href="https://github.com/88250/solo" target="_blank">88250/solo: 🎸 B3log 分布式社区的 Java 博客端节点系统，欢迎加入下一代社区网络。B3log distributed community blog-end node based on Java, welcome to join the next generation community network.</a></p>
+</blockquote>
+<blockquote>
+<p>需要用到的指令:</p>
+<p><code>java -cp "lib/*;." org.b3log.solo.Server</code></p>
+<p>Solo项目路径:</p>
+<p><code>D:\blog\solo-v4.4.0</code></p>
+</blockquote>
+<h3 id="toc_h3_5">1. 下载Solo</h3>
+<hr>
+<p>方法1：下载ZIP文件</p>
+<ol>
+<li>访问Solo仓库，仓库地址附上：<a href="https://gitee.com/dl88250/solo" target="_blank">solo: 🎸 B3log 分布式社区的 Java 博客端节点系统，欢迎加入下一代社区网络。B3log distributed community blog-end node system, welcome to join the next generation community network.</a></li>
+<li>点击" 克隆/下载 " -- “ 下载ZIP ”</li>
+<li>在想要存储的地方-- “ 新建文件夹 ”，并且将ZIP文件解压到文件夹中  <strong>文件夹路径不能含有中文</strong></li>
+</ol>
+<p>方法2:命令行拉取</p>
+<ol>
+<li>在想要存储的地方-- “ 新建文件夹 ”，并且将ZIP文件解压到文件夹中  <strong>文件夹路径不能含有中文</strong></li>
+<li>在终端输入:<code>git clone https://gitee.com/dl88250/solo.git</code></li>
+</ol>
+<p>终端:cmd  powershell  在windows搜索框输入以上两个即可出现，后面还需要用到</p>
+<p><img src="https://b3logfile.com/file/2025/08/image-sbhKAKZ.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></p>
+<p>我的Solo项目路径: <code>D:\blog\solo-v4.4.0</code></p>
+<h3 id="toc_h3_6">2. 配置Solo</h3>
+<hr>
+<blockquote>
+<p>使用h2_data存储方式</p>
+</blockquote>
+<ol>
+<li>打开 <code>local.properties</code> 注释掉Mysql部分，启用H2部分,保存</li>
+</ol>
+<pre><code class="language-properties">#### MySQL runtime ####
+#runtimeDatabase=MYSQL
+#jdbc.username=root
+#jdbc.password=123456
+#jdbc.driver=com.mysql.cj.jdbc.Driver
+#jdbc.URL=jdbc:mysql://localhost:3306/solo?useUnicode=yes&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true
+
+#### H2 runtime ####
+runtimeDatabase=H2
+jdbc.username=root
+jdbc.password=
+jdbc.driver=org.h2.Driver
+jdbc.URL=jdbc:h2:~/solo_h2/db;MODE=MYSQL
+</code></pre>
+<p><code>jdbc.URL=jdbc:h2:~/solo_h2/db</code>:表示数据存储位置，可以修改成自己对应的文件名<code>D:/mydata/solo_h2/db</code></p>
+<p><code>~</code>表示home目录，比如windows下:<code>C:\Users\zyb</code></p>
+<ol start="2">
+<li>打开终端，并且切换目录
+<ol>
+<li>方法一：cd指令<code>cd /d D:\blog\solo-v4.4.0</code></li>
+<li>方法二: 右键当前目录，点击在终端中打开</li>
+</ol>
+</li>
+<li>输入指令:<code>java -cp "lib/*;." org.b3log.solo.Server</code></li>
+</ol>
+<p>日志显示<code>Solo is running</code> 即成功</p>
+<h3 id="toc_h3_7">3. Solo后台管理系统配置</h3>
+<p>请观看D的演示视频，已经十分详细了</p>
+<h2 id="toc_h2_8">第三部分：配置github pages</h2>
+<blockquote>
+<p>github仓库目录: <code>D:\blog\zyboshi.github.io</code></p>
+</blockquote>
+<p>创建仓库：</p>
+<ol>
+<li>个人主页中点击<img src="https://b3logfile.com/file/2025/08/image-coNKV4B.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></li>
+<li>如图输入<img src="https://b3logfile.com/file/2025/08/image-7gtpB25.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></li>
+</ol>
+<p>Eg:Repository name:<code>Owner name/github.io</code> 以 小写 写Owner name,我这里因为已经注册过了，因此显示已存在</p>
+<ol start="3">
+<li>将仓库通过git 拉取的方式下载到本地目录<code>D:\blog</code><br>
+！！！ 不可使用ZIP下载<br>
+于D:\blog 中打开终端，在拉取后会自动创建一个新的文件夹<br>
+命令:<code>git clone xxx</code></li>
+</ol>
+<p>到现在为止，就成功拥有了一个可以存放博客网站的资源库。</p>
+<p>配置pages</p>
+<ol>
+<li>进入仓库，点击 <code>setting</code> -- <code>Pages</code></li>
+<li>可以看到:<img src="https://b3logfile.com/file/2025/08/image-Wco3RgN.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></li>
+</ol>
+<p>其中<a href="https://zyboshi.github.io/" target="_blank">https://zyboshi.github.io/</a>便是静态网站域名</p>
+<p>连接pages和Solo</p>
+<ol>
+<li>进入solo后台管理系统</li>
+<li><code>工具</code> -- <code>静态站点</code> -- <code>站点地址</code> ：输入静态网站域名</li>
+</ol>
+<p><img src="https://b3logfile.com/file/2025/08/image-Qdccczt.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></p>
+<ol start="3">
+<li>
+<p>点击生成按钮  <img src="https://b3logfile.com/file/2025/08/image-uEOunoI.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt="image.png"></p>
+</li>
+<li>
+<p>将<code>static-site</code>文件夹中内容复制到	<code>xxx.github.io</code>  文件夹中</p>
+</li>
+<li>
+<p>在终端输入以下命令，推送至github，推送完成后可以在github上检查是否成功</p>
+<pre><code class="language-bash"># 1. 添加当前目录下的所有新文件和更改文件（最常用）
+git add .
+
+# 2.提交更改到本地仓库 (Commit)
+git commit -m "这里写你的提交说明信息"
+
+# 3. 首次推送，使用 -u 参数建立上游关联
+git push -u origin main
+
+# 3. 之后的推送，直接使用即可
+git push
+</code></pre>
+</li>
+</ol>
+<h3 id="toc_h3_9">第四部分：一键提交</h3>
+<blockquote>
+<p>初学者可仅仅只学习以上内容，接下来的内容可在熟练掌握Git后进行学习</p>
+</blockquote>
+<p>当我们利用Solo生成页面后，只需要双击一个文件，剩下的所有事情都会自动完成：上传代码、更新网站。整个过程只需要3秒钟，完全不需要手动操作。</p>
+<h4 id="toc_h4_10">自动化脚本组成</h4>
+<ol>
+<li><code>deploy.sh</code> :Shell脚本 核心执行文件</li>
+<li><code>deploy.bat</code>:Windows批处理文件 启动器</li>
+</ol>
+<h4 id="toc_h4_11">自动化脚本代码:</h4>
+<ol>
+<li><strong>deploy.sh</strong>：</li>
+</ol>
+<pre><code class="language-bash">#!/bin/bash
+# 这行告诉系统用bash shell来执行这个脚本
+
+# 文件拷贝 - 从solo博客生成目录拷贝到GitHub页面目录
+cp -r /d/blog/solo-v4.4.0/static-site/* /d/blog/zyboshi.github.io/
+# cp = copy拷贝命令
+# -r = 递归拷贝（包含所有子文件夹和文件）
+# 第一个路径是源目录（你的博客生成文件）
+# 第二个路径是目标目录（GitHub页面仓库）
+
+echo "开始上传"
+# 在终端显示提示信息
+
+# 切换到GitHub页面目录
+cd /d/blog/zyboshi.github.io
+# cd = change directory切换目录
+
+# 添加所有文件到git暂存区
+git add --all
+# 将目录中的所有文件标记为待提交状态
+
+echo "请输入提交描述文字如果没有默认: 更新文章"
+read describe
+# 提示用户输入提交描述
+# read命令等待用户输入，并将输入内容存入describe变量
+
+if [ ! -n "$describe" ]
+then
+describe="更新文章"
+fi
+# 如果用户没有输入内容（直接按回车），则使用默认描述"更新文章"
+
+echo $describe
+# 显示最终使用的提交描述
+
+# 提交代码到本地仓库
+git commit -m "$describe"
+# commit = 提交更改
+# -m = 添加提交消息
+# "$describe" = 使用前面设置的描述文字
+
+# 拉取远程代码（防止冲突）
+git pull
+# 先从GitHub拉取最新代码，确保没有冲突
+
+# 推送代码到GitHub
+git push origin main
+# push = 推送代码
+# origin = 远程仓库别名（通常是GitHub）
+# main = 主分支名称（原来是master，现在主流是main）
+</code></pre>
+<p>替换部分:</p>
+<p><code>cp -r /d/blog/solo-v4.4.0/static-site/* /d/blog/zyboshi.github.io/</code> -&gt;<code>cp solo目录/solo-v4.4.0/static-site/* github仓库地址</code></p>
+<p><code>cd /d/blog/zyboshi.github.io</code>:-&gt;<code>cd github仓库地址</code></p>
+<p><code>git push origin main</code> -&gt;<code>git push origin 分支名</code></p>
+<ol start="2">
+<li><strong>deploy.bat</strong></li>
+</ol>
+<pre><code class="language-bash">@echo off
+echo 🚀 开始一键部署博客...
+echo.
+
+"D:\useful_tool\git\Git\git-bash.exe" -c "cd /d/blog/ &amp;&amp; bash deploy.sh"
+
+echo.
+echo ✅ 部署完成！按任意键退出...
+pause
+</code></pre>
+<p>使用时点击.bat文件即可</p>
+<h1 id="toc_h1_12">Last</h1>
+<p>Thanks for reading!</p>
+<p>Open Heart, Open Mind</p>
+<p>Open Arms, Open Life!</p>
+
+                <aside class="fn__flex">
+                        <a class="fn__flex-1 fn__flex-inline" rel="prev" href="https://zyboshi.github.io/test-first-one">
+                            <strong>&lt;</strong>
+                            <span>&nbsp; 测试&nbsp;&nbsp;&nbsp;</span>
+                        </a>
+                </aside>
+        </section>
+
+        <footer class="fn-clear share">
+            <div class="fn-right">
+<div class="article__share"
+     data-title="从零搭建个人博客指南:Solo + GitHub Pages"
+     data-blogtitle="<有心论>"
+     data-url="https://zyboshi.github.io/articles/2025/08/26/1756216361270.html"
+     data-avatar="https://b3logfile.com/avatar/1739258071160_1739258341466.png?imageView2/1/w/128/h/128/interlace/0/q/100">
+    <span class="item" data-type="qqz">
+        <svg viewBox="0 0 32 32" width="100%" height="100%">
+            <path d="M22.824 13.989l-8.348 6.287s3.351 0.522 8.404 0.461l-0.23-1.040 7.2-6.549c0.132-0.12 0.183-0.312 0.129-0.487s-0.203-0.299-0.377-0.314l-9.492-0.856-3.708-9.213c-0.068-0.169-0.226-0.279-0.401-0.279s-0.333 0.11-0.401 0.279l-3.708 9.213-9.492 0.856c-0.174 0.015-0.323 0.139-0.377 0.314s-0.004 0.366 0.129 0.487l7.2 6.549-2.158 9.742c-0.040 0.178 0.026 0.365 0.168 0.474 0.142 0.107 0.331 0.115 0.481 0.021l8.158-5.165 8.158 5.165c0.070 0.045 0.147 0.066 0.225 0.066 0.090 0 0.18-0.029 0.256-0.086 0.142-0.109 0.208-0.295 0.168-0.474l-1.707-7.704c0.732-0.386 1.538-1.040 1.538-1.040s-3.195 1.638-14.664 0.838l8.312-6.325s-0.327-0.534-10.744-0.914c-0.697-0.026 8.493-1.83 15.281-0.305z"></path>
+        </svg>
+    </span>
+    <span class="item" data-type="wechat">
+        <svg viewBox="0 0 32 32" width="100%" height="100%">
+            <path d="M9.062 9.203c0-0.859-0.562-1.422-1.422-1.422-0.844 0-1.703 0.562-1.703 1.422 0 0.844 0.859 1.406 1.703 1.406 0.859 0 1.422-0.562 1.422-1.406zM20.672 17.125c0-0.562-0.562-1.125-1.422-1.125-0.562 0-1.125 0.562-1.125 1.125 0 0.578 0.562 1.141 1.125 1.141 0.859 0 1.422-0.562 1.422-1.141zM16.984 9.203c0-0.859-0.562-1.422-1.406-1.422-0.859 0-1.703 0.562-1.703 1.422 0 0.844 0.844 1.406 1.703 1.406 0.844 0 1.406-0.562 1.406-1.406zM26.906 17.125c0-0.562-0.578-1.125-1.422-1.125-0.562 0-1.125 0.562-1.125 1.125 0 0.578 0.562 1.141 1.125 1.141 0.844 0 1.422-0.562 1.422-1.141zM22.75 10.922c-0.359-0.047-0.719-0.063-1.094-0.063-5.375 0-9.625 4.016-9.625 8.953 0 0.828 0.125 1.625 0.359 2.375-0.359 0.031-0.703 0.047-1.063 0.047-1.422 0-2.547-0.281-3.969-0.562l-3.953 1.984 1.125-3.406c-2.828-1.984-4.531-4.547-4.531-7.656 0-5.391 5.094-9.625 11.328-9.625 5.563 0 10.453 3.391 11.422 7.953zM32 19.687c0 2.547-1.688 4.813-3.969 6.516l0.859 2.828-3.109-1.703c-1.141 0.281-2.281 0.578-3.406 0.578-5.391 0-9.625-3.688-9.625-8.219s4.234-8.219 9.625-8.219c5.094 0 9.625 3.688 9.625 8.219z"></path>
+        </svg>
+    </span>
+    <span class="item" data-type="weibo">
+        <svg viewBox="0 0 32 32" width="100%" height="100%">
+            <path d="M13.444 27.064c-5.3 0.525-9.875-1.875-10.219-5.35-0.344-3.481 3.675-6.719 8.969-7.244 5.3-0.525 9.875 1.875 10.212 5.35 0.35 3.481-3.669 6.725-8.963 7.244zM24.038 15.521c-0.45-0.137-0.762-0.225-0.525-0.819 0.512-1.287 0.563-2.394 0.006-3.188-1.038-1.481-3.881-1.406-7.137-0.037 0 0-1.025 0.444-0.762-0.363 0.5-1.613 0.425-2.956-0.356-3.737-1.769-1.769-6.469 0.069-10.5 4.1-3.013 3.006-4.763 6.212-4.763 8.981 0 5.287 6.787 8.506 13.425 8.506 8.7 0 14.494-5.056 14.494-9.069 0-2.431-2.044-3.806-3.881-4.375z"></path>
+            <path d="M29.819 5.833c-2.1-2.331-5.2-3.219-8.063-2.612v0c-0.663 0.144-1.081 0.794-0.938 1.45 0.144 0.662 0.788 1.081 1.45 0.938 2.038-0.431 4.238 0.2 5.731 1.856s1.9 3.913 1.256 5.888v0c-0.206 0.644 0.144 1.331 0.788 1.544 0.644 0.206 1.331-0.144 1.544-0.787v-0.006c0.9-2.762 0.331-5.938-1.769-8.269z"></path>
+            <path d="M26.588 8.752c-1.025-1.138-2.538-1.569-3.925-1.269-0.569 0.119-0.931 0.688-0.813 1.256 0.125 0.569 0.688 0.931 1.25 0.806v0c0.681-0.144 1.419 0.069 1.919 0.619 0.5 0.556 0.637 1.313 0.419 1.975v0c-0.175 0.55 0.125 1.15 0.681 1.331 0.556 0.175 1.15-0.125 1.331-0.681 0.438-1.356 0.163-2.906-0.863-4.037z"></path>
+            <path d="M13.738 20.771c-0.188 0.319-0.594 0.469-0.912 0.337-0.319-0.125-0.412-0.488-0.231-0.794 0.188-0.306 0.581-0.456 0.894-0.337 0.313 0.113 0.425 0.469 0.25 0.794zM12.044 22.933c-0.512 0.819-1.613 1.175-2.438 0.8-0.813-0.369-1.056-1.319-0.544-2.119 0.506-0.794 1.569-1.15 2.388-0.806 0.831 0.356 1.1 1.3 0.594 2.125zM13.969 17.146c-2.519-0.656-5.369 0.6-6.463 2.819-1.119 2.262-0.037 4.781 2.506 5.606 2.638 0.85 5.75-0.456 6.831-2.894 1.069-2.394-0.262-4.85-2.875-5.531z"></path>
+        </svg>
+    </span>
+    <span class="item" data-type="twitter">
+        <svg viewBox="0 0 32 32" width="100%" height="100%">
+            <path d="M32.003 6.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+        </svg>
+    </span>
+    <span class="item__qr"></span>
+</div>            </div>
+        </footer>
+            <div id="relevantArticles" class="abstract"></div>
+            <div id="randomArticles" class="abstract"></div>
+        <br>
+    </article>
+        <div style="padding: 30px 60px 30px 50px;" id="gitalk-container"></div>
+        <div id="b3logsolocomments"></div>
+        <div id="vcomment" style="padding: 30px 60px 30px 50px;" data-name="ZybLove"
+             data-postId="1756216361270"></div>
+
+<footer class="footer">
+    <div class="fn-clear">
+        浏览数：<span data-uvstaturl="https://zyboshi.github.io">0</span>
+        &nbsp;
+        文章总数：3
+        <br>
+        &copy; 2025
+        <a href="https://zyboshi.github.io"><有心论></a>
+        
+    </div>
+    <span onclick="Util.goTop()" class="icon-goup"></span>
+</footer>
+<script>
+  var Label = {
+    speech: true,
+    servePath: "https://zyboshi.github.io",
+    staticServePath: "https://zyboshi.github.io",
+    luteAvailable: false,
+    hljsStyle: 'github',
+    langLabel: "zh_CN",
+    version: "4.4.0",
+    staticSite: true,
+    showCodeBlockLn: false,
+    articleId: "1756216361270",
+  }
+</script>
+<script src="https://zyboshi.github.io/skins/yilia/js/common.min.js?1756212806233"></script>
+
+
+<script type="text/javascript">
+    Util.addScript('https://zyboshi.github.io/js/page.min.js?1756212806233', 'soloPageScript')
+    var page = new Page({
+        "commentContentCannotEmptyLabel": "评论不能为空",
+        "oId": "1756216361270",
+        "blogHost": "https://zyboshi.github.io",
+        "randomArticles1Label": "随机阅读：",
+        "externalRelevantArticles1Label": "站外相关阅读："
+    });
+    $(document).ready(function () {
+        page.load();
+        page.tips.externalRelevantArticlesDisplayCount = "0";
+            page.loadRandomArticles();
+            page.loadRelevantArticles('1756216361270', '<h4>相关阅读：</h4>');
+        page.share()
+    });
+</script>
+</main>
+</body>
+</html>
+
+<!-- Generated by Latke (https://github.com/88250/latke) in 5ms, 2025/08/26 21:53:58 -->
