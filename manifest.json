@@ -3,10 +3,10 @@
     "theme_color": "#1fb5ad",
     "background_color": "#f1f2f7",
     "display": "standalone",
-    "name": "ZybLove 的个人博客",
+    "name": "<有心论>",
     "start_url": ".",
-    "description": "<有心论>",
-    "short_name": "ZybLove 的个人博客",
+    "description": "ZybLove 的个人博客",
+    "short_name": "<有心论>",
     "icons": [
         {
             "sizes": "48x48",
